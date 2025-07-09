@@ -1,0 +1,10 @@
+<books>
+  <book>
+    <title>React Basics</title>
+    <author>John Doe</author>
+  </book>
+  <book>
+    <title>Advanced React</title>
+    <author>Jane Smith</author>
+  </book>
+</books>
