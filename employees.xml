@@ -4,29 +4,34 @@
     <name>John Doe</name>
     <department>HR</department>
     <salary>50000</salary>
+    <status>Pending</status>
   </employee>
   <employee>
     <id>00002</id>
     <name>Jane Smith</name>
     <department>IT</department>
     <salary>75000</salary>
+     <status>Pending</status>
   </employee>
   <employee>
     <id>00003</id>
     <name>John Doe</name>
     <department>HR</department>
     <salary>50000</salary>
+     <status>Ok</status>
   </employee>
   <employee>
     <id>00004</id>
     <name>John Doe</name>
     <department>HR</department>
     <salary>50000</salary>
+     <status>Reject</status>
   </employee>
   <employee>
     <id>00005</id>
     <name>John Doe</name>
     <department>HR</department>
     <salary>50000</salary>
+     <status>Pending</status>
   </employee>
 </employees>

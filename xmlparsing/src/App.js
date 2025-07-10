@@ -1,11 +1,13 @@
 
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import './App.css';
 
 function App() {
 
  const [empIds, setEmpIds] = useState([]);
+ 
+
  const nav=useNavigate()
  
 
@@ -27,7 +29,7 @@ function App() {
           {
             empIds.map((id)=>
             {
-              return (<p>Emp Id== {id} <button value={id} onClick={()=>nav("/")} >Check Details</button></p>)
+              return (<p>Emp Id== {id} <button  onClick={()=>nav("/emp-details-page",{state:id})} >Check Details</button></p>)
             })
           }
     </div>
