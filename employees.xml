@@ -1,37 +1,40 @@
+
 <employees>
   <employee>
     <id>00001</id>
     <name>John Doe</name>
     <department>HR</department>
     <salary>50000</salary>
-    <status>Pending</status>
+
+    <services>
+      <service_a>Ok</service_a>
+      <service_b>pending</service_b>
+      <service_c>Ok</service_c>
+      <service_d>pending</service_d>
+      <service_e>Reject</service_e>
+    </services>
   </employee>
   <employee>
     <id>00002</id>
     <name>Jane Smith</name>
     <department>IT</department>
     <salary>75000</salary>
-     <status>Pending</status>
+    <services>
+      <service_a>Ok</service_a>
+      <service_b>pending</service_b>
+      <service_c>Ok</service_c>
+    </services>
   </employee>
   <employee>
     <id>00003</id>
     <name>John Doe</name>
     <department>HR</department>
     <salary>50000</salary>
-     <status>Ok</status>
-  </employee>
-  <employee>
-    <id>00004</id>
-    <name>John Doe</name>
-    <department>HR</department>
-    <salary>50000</salary>
-     <status>Reject</status>
-  </employee>
-  <employee>
-    <id>00005</id>
-    <name>John Doe</name>
-    <department>HR</department>
-    <salary>50000</salary>
-     <status>Pending</status>
+    <services>
+      <service_a>Ok</service_a>
+      <service_b>pending</service_b>
+      <service_c>Ok</service_c>
+    </services>
   </employee>
 </employees>
+

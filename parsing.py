@@ -3,7 +3,6 @@ from flask_cors import CORS
 import xml.etree.ElementTree as ET
 import os
 import json
-
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all origins
 tree = ET.parse('employees.xml')
@@ -24,17 +23,18 @@ def get_xml():
 
 @app.route('/emp-details',methods=['GET', 'POST'])
 def emp_details():
-    empDetailss={}
+    servicess={}
     
     id=request.args.get("id")
     for emp in root.findall('employee'):
         if id==emp.find('id').text:
-            empDetailss["id"]=emp.find('id').text
-            empDetailss["name"]=emp.find('name').text
-            empDetailss["department"]=emp.find('department').text
-            empDetailss["salary"]=emp.find('salary').text
-            empDetailss["status"]=emp.find('status').text
-            return jsonify(empDetailss)
+            servicess["id"]=id
+            services = emp.find('services')
+         
+            for service in services:
+                servicess[service.tag]=service.text
+            print(servicess)
+            return jsonify(servicess)
         
 @app.route('/status-update',methods=['GET', 'POST'])
 def emp_status_val_update():

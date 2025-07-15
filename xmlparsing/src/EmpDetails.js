@@ -55,7 +55,7 @@ const EmpDetails=()=>
       .then((data) => {
         
        setEmpDetailss(JSON.parse(data))
-        console.log(typeof empDetailss)
+        console.log(data)
         
       })
       .catch((error) => console.error('Error fetching XML:', error));
@@ -64,18 +64,11 @@ const EmpDetails=()=>
 
         return(<>
                   <p>Id: {empDetailss.id}</p>
-                  <p>Name: {empDetailss.name}</p>
-                  <p>Department: {empDetailss.department}</p>
-                  <p>Salary: {empDetailss.salary}</p>
-                  <p>Status {empDetailss.status} {empDetailss.status=="Pending"?
-                      <><select id="selectUpdate">
-                        <option>Update Status</option>
-                        <option value="Ok" >Ok</option>
-                        <option value="Reject">Reject</option>
-                      </select>
-                      <button onClick={updateStatus}>Update</button></>
-                      :  ""
-                }</p>
+                  <p>Service A: {empDetailss.service_a}</p>
+                   <p>Service B: {empDetailss.service_b}</p>
+                    <p>Service C: {empDetailss.service_c}</p>
+                 
+                  
         </>)
     }
 
